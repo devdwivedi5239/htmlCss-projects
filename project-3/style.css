@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;;
+}
+
+.section-0, .section-1, .section-2, .section-3, .section-4 {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-0 {
+    background-image: url(images/que-img.jpg);
+    min-height: 100vh;
+}
+
+.section-1 {
+    background-image: url(images/img-1.jpg);
+    min-height: 100vh;
+}
+
+.section-2 {
+    background-image: url(images/img-2.jpg);
+    min-height: 100vh;
+}
+
+.section-3 {
+    background-image: url(images/img-3.jpg);
+    min-height: 100vh;
+}
+
+.section-4 {
+    background-image: url(images/coding-man.jpg);
+    min-height: 100vh;
+}
+
+.section-0-ques {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    text-transform: none;
+    font-size: 1.5vw;
+    
+}
+
+h1 {
+    margin: 1vw auto;
+    text-transform: uppercase;
+    font-size: 3vw;
+    letter-spacing: 0.25vw;
+}
+
+
+.quote {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.75vw;
+    font-weight: 700;
+    letter-spacing: 0.25vw;
+}
+
+p > span {
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+.c-white {
+    color: white;
+}
+
+.section-4-txt {
+    color: white;
+    top: 40%;
+}
+
+.section-4-txt > p > span {
+    font-size: 3vw;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 480px) {
+    .section-0-ques {
+        width: 100%;
+        position: absolute;
+        top: 25%;
+        text-align: center;
+        text-transform: none;
+        font-size: 4vw;
+        line-height: 10vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+        letter-spacing: 0.5vw;
+        margin: 7vw auto;
+    }
+
+    .quote {
+        top: 25%;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 6vw;
+        font-weight: 700;
+        letter-spacing: 0.5vw;
+    }
+
+    .quote > p > span {
+        font-size: 3vw;
+    }
+
+    .section-4-txt > p > span {
+        font-size: 7vw;
+    }
+}
