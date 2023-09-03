@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@200;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    background-color: #123a60;
+    color: white;
+}
+
+h1,
+h2 {
+    color: #1daab4;
+}
+
+hr {
+    border: 10px dotted rgb(48, 72, 124);
+    border-top: none;
+}
+
+
+/* NAVBAR */
+nav {
+    background-color: #124d74;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    height: 4vw;
+    min-width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+nav>.inner-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.inner-nav>a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.75vw;
+    padding: 10px;
+    font-size: 1.5vw;
+}
+
+.inner-nav>a:hover {
+    background-color: #1fd5b5;
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+    border-radius: 10%;
+}
+
+/* ------------------ */
+
+
+/* Section-1 Intro */
+.section-1 {
+    position: relative;
+    top: 3vw;
+    overflow: hidden;
+    margin: 2vw auto;
+}
+
+.section-1-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1vw auto;
+}
+
+.section-1-text {
+    text-align: center;
+    font-size: 3vw;
+    letter-spacing: 0.2vw;
+    line-height: 2;
+    padding: 2vw;
+}
+
+.section-1-img {
+    height: 40vw;
+}
+
+.section-1-text>p>span {
+    color: #ffb507;
+}
+
+.name {
+    font-family: 'Dancing Script', cursive;
+    ;
+    font-weight: 500;
+    font-size: 3vw;
+    letter-spacing: normal;
+}
+
+.section-1>p:nth-child(2) {
+    font-style: italic;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+    margin: 1.5vw auto;
+    font-size: 2.25vw;
+}
+
+.hr-1 {
+    margin: 5vw 40vw 2vw;
+}
+
+/* -------------- */
+
+
+/* SECTION 2 Projects*/
+
+.section-2-container {
+    margin: 1vw auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.project-img {
+    height: 40vw;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 1vw auto;
+}
+
+.grid-item {
+    display: grid;
+    justify-self: center;
+    margin: 2vh;
+}
+
+.card {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+
+.card:hover {
+    transform: scale(1.025);
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover>.card-content {
+    background-color: #1fd5b5;
+    color: #123a60;
+    cursor: pointer;
+    transform: translateY(0vw);
+    transform: scale(1.025);
+    transition: 0.5s ease-in-out;
+}
+
+.card-content {
+    padding: 2rem;
+    position: relative;
+    top: -6.5rem;
+    margin-bottom: -6.5rem;
+    transform: translateY(100px);
+    text-align: center;
+    font-size: 1vw;
+}
+
+.hr-2 {
+    margin: 3vw 40vw;
+}
+
+/* ----------------- */
+
+/* section 3 contact */
+
+.section-3 {
+    margin-bottom: 2vw;
+}
+
+.section-3-container {
+    margin: 1vw auto;
+    min-height: 75vh;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5vw auto;
+}
+
+.contact-container>a {
+    text-decoration: none;
+    color: #1fd5b5;
+}
+
+.contact-container>a:hover {
+    transform: scale(1.025);
+    color: #1fd5b5;
+}
+
+.contact-list {
+    margin: 3vw;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list>h3 {
+    margin: 0.5vw;
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+    nav {
+        height: 10vw;
+    }
+
+    h1 {
+        font-size: 8vw;
+    }
+
+    .inner-nav>a {
+        font-size: 4vw;
+    }
+
+    .section-1-container {
+        flex-direction: column;
+        min-height: 90vh;
+    }
+
+    .section-1-img {
+        height: 85vw;
+    }
+
+    .section-1-text {
+        font-size: 10vw;
+    }
+
+    .name {
+        font-size: 11vw;
+    }
+
+    hr {
+        margin: 5vw 40vw;
+    }
+
+    /* ---------------- */
+
+    h2 {
+        font-size: 8vw;
+    }
+
+    .project-img {
+        height: 80vw;
+    }
+
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        margin: 1vw auto;
+    }
+
+    .grid-item {
+        justify-content: center;
+        align-content: center;
+    }
+
+    .card {
+        min-width: 90vw;
+    }
+
+    .card-content {
+        font-size: 4vw;
+    }
+
+    /* -------------- */
+
+    .section-3-container {
+        min-height: 80vh;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5vw auto;
+    }
+
+    .contact-list>h3 {
+        margin: 5vw;
+        font-size: 7vw;
+    }
+}
