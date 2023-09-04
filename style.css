@@ -19,6 +19,10 @@ h2 {
     color: #1daab4;
 }
 
+a {
+    text-decoration: none;
+}
+
 hr {
     border: 10px dotted rgb(48, 72, 124);
     border-top: none;
@@ -50,7 +54,6 @@ nav>.inner-nav {
 
 .inner-nav>a {
     color: white;
-    text-decoration: none;
     margin: 0 0.75vw;
     padding: 10px;
     font-size: 1.5vw;
@@ -185,8 +188,8 @@ h2 {
 }
 
 .card-content > a {
-    text-decoration: none;
     cursor: pointer;
+    color: white;
 }
 
 .hr-2 {
