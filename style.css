@@ -169,7 +169,6 @@ h2 {
 .card:hover>.card-content {
     background-color: #1fd5b5;
     color: #123a60;
-    cursor: pointer;
     transform: translateY(0vw);
     transform: scale(1.025);
     transition: 0.5s ease-in-out;
@@ -183,6 +182,11 @@ h2 {
     transform: translateY(100px);
     text-align: center;
     font-size: 1vw;
+}
+
+.card-content > a {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .hr-2 {
