@@ -1,4 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  height: 100%;
   text-align: center;
   background-color: #283149;
 }
@@ -18,35 +25,53 @@ footer {
 
 .a {
   background-image: url(images/tom1.png);
+  background-repeat: no-repeat;
+  background-position: top;
   
 }
 
 .s {
   background-image: url(images/tom2.png);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .d {
   background-image: url(images/tom3.png);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .f {
   background-image: url(images/tom4.png);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .j {
   background-image: url(images/crash.png);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .k {
   background-image: url(images/snare.png);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .l {
   background-image: url(images/kick.png);
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .set {
   margin: 10% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .game-over {
@@ -73,7 +98,6 @@ footer {
   color: #DA0463;
   text-shadow: 3px 0 #DBEDF3;
   border-radius: 15px;
-  display: inline-block;
   width: 150px;
   height: 150px;
   text-align: center;
